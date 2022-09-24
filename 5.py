@@ -10,9 +10,9 @@ def divisible_by_all(nr, divisors):
             return False
     return True
 
-def find_nr():
-    divisors = list(range(20,2,-1))
-    i = 2520
+def find_nr(minimum, dividors):
+    divisors = list(range(dividors,2,-1))
+    i = minimum
     found = False
 
     while not found:
@@ -22,4 +22,4 @@ def find_nr():
             i += 10
     return i
 
-print(find_nr())
+print(find_nr(2520, 20))

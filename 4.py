@@ -5,11 +5,12 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 """
 
 def biggest_palindrome(n):
-    for i in range(n, 1, -1):
+    product = n*n
+    for i in range(product, 1, -1):
         if palindrome(0, len(str(i))-1, str(i)):
-            for j in range(999, 1, -1):
+            for j in range(n, 1, -1):
                 divider = i / j
-                if divider <= 999 and (divider - int(divider) == 0):
+                if divider <= n and (divider - int(divider) == 0):
                     print(f'Palindrome is {j} * {int(i / j)} = {i}')
                     return (i)
 
@@ -23,4 +24,4 @@ def palindrome(i, j, word):
     else:
         False
 
-print(biggest_palindrome(999*999))
+print(biggest_palindrome(999))
