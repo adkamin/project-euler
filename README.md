@@ -1,3 +1,3 @@
 # project-euler
 
-My code solutions to [Project Euler](https://projecteuler.net/) math challenges.
+My Python code solutions to [Project Euler](https://projecteuler.net/) math challenges.
