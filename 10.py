@@ -23,7 +23,7 @@ def find_prime_number(n):
             primes.append(prime)
             sum_primes += prime
         prime += 2
-    print("The program took %s seconds" % ((time.time() - start_time) % 60))
+    print("the program took %s seconds" % (time.time() - start_time))
     return sum_primes
 
 print(find_prime_number(2000000))
