@@ -10,7 +10,6 @@ def find_sum(n):
     fib = [1,2]
     i = 1
     sum = 0
-
     while fib[i] < n:
         fib.append(fib[i] + fib[i-1])
         if fib[i] % 2 == 0:

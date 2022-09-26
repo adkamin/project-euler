@@ -14,7 +14,6 @@ def find_nr(minimum, dividors):
     divisors = list(range(dividors,2,-1))
     i = minimum
     found = False
-
     while not found:
         if divisible_by_all(i, divisors):     
             found = True

@@ -11,7 +11,7 @@ def biggest_palindrome(n):
             for j in range(n, 1, -1):
                 divider = i / j
                 if divider <= n and (divider - int(divider) == 0):
-                    print(f'Palindrome is {j} * {int(i / j)} = {i}')
+                    print(f'palindrome is {j} * {int(i / j)} = {i}')
                     return (i)
 
 def palindrome(i, j, word):

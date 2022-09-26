@@ -5,7 +5,6 @@ Find the thirteen adjacent digits in the 1000-digit number that have the greates
 def find_digits(n, nr_digits):
     digits = []
     total_max = current_max = 1
-
     for i in range(len(n)-nr_digits):
         for j in range(nr_digits):
             current_max *= int(n[i+j])

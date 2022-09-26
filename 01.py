@@ -4,7 +4,6 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
-# The program iterates over 333 + 500 = 833 numbers
 def find_sum(prime1, prime2):
     sum = 0
     for i in range(prime1, 1000, prime1):
